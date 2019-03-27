@@ -106,7 +106,7 @@ switch(keyNow){
   groundSpeed=80/15;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogRight.png");
-        if(groundhogMove==15){
+        if(groundhogMove==16){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
@@ -122,7 +122,7 @@ switch(keyNow){
   groundSpeed=-80/15;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogLeft.png");
-        if(groundhogMove==15){
+        if(groundhogMove==16){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
@@ -138,7 +138,7 @@ switch(keyNow){
   groundSpeed=80/15;
   groundHogY+=groundSpeed;
   groundHog = loadImage("img/groundhogDown.png");
-        if(groundhogMove==15){
+        if(groundhogMove==16){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
@@ -218,12 +218,12 @@ break;
 
 void keyPressed(){
 if(keyCode==DOWN && groundhogMovingLeft==0 && groundhogMovingRight==0 && gameState==GAME_RUN){
-if(groundHogY<399)keyNow=key_Down;
+if(groundHogY + 80 < height)keyNow=key_Down;
 }
 else if(keyCode==LEFT && groundhogMovingDown==0 && groundhogMovingRight==0 && gameState==GAME_RUN){
-if(groundHogX > 1)keyNow=key_Left;
+if(groundHogX > 0)keyNow=key_Left;
 }
 else if(keyCode==RIGHT && groundhogMovingDown==0 && groundhogMovingLeft==0 && gameState==GAME_RUN){
-if(groundHogX <559)keyNow=key_Right;
+if(groundHogX + 80 < width)keyNow=key_Right;
 }
 }
