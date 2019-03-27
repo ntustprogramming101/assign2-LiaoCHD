@@ -106,7 +106,7 @@ switch(keyNow){
   groundSpeed=80/15;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogRight.png");
-        if(groundhogMove==14){
+        if(groundhogMove==15){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
@@ -122,7 +122,7 @@ switch(keyNow){
   groundSpeed=-80/15;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogLeft.png");
-        if(groundhogMove==14){
+        if(groundhogMove==15){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
@@ -138,7 +138,7 @@ switch(keyNow){
   groundSpeed=80/15;
   groundHogY+=groundSpeed;
   groundHog = loadImage("img/groundhogDown.png");
-        if(groundhogMove==14){
+        if(groundhogMove==15){
           groundHog = loadImage("img/groundhogIdle.png");
           groundSpeed=0;
           groundhogMove=0;
