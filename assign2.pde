@@ -218,12 +218,12 @@ break;
 
 void keyPressed(){
 if(keyCode==DOWN && groundhogMovingLeft==0 && groundhogMovingRight==0 && gameState==GAME_RUN){
-if(groundHogY + 80 < height)keyNow=key_Down;
+if(groundHogY<399)keyNow=key_Down;
 }
 else if(keyCode==LEFT && groundhogMovingDown==0 && groundhogMovingRight==0 && gameState==GAME_RUN){
-if(groundHogX > 0)keyNow=key_Left;
+if(groundHogX > 1)keyNow=key_Left;
 }
 else if(keyCode==RIGHT && groundhogMovingDown==0 && groundhogMovingLeft==0 && gameState==GAME_RUN){
-if(groundHogX + 80 < width)keyNow=key_Right;
+if(groundHogX <559)keyNow=key_Right;
 }
 }
