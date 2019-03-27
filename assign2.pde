@@ -11,7 +11,7 @@ int lifePoint=2;
 
 float groundHogX=320;
 float groundHogY=80;
-float groundSpeed=80/15;
+float groundSpeed=80/16;
 
 float groundhogMove=0;
 
@@ -103,7 +103,7 @@ switch(keyNow){
   case (key_Right):
   groundhogMovingRight=1;
   groundhogMove+=1;
-  groundSpeed=80/15;
+  groundSpeed=80/16;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogRight.png");
         if(groundhogMove==16){
@@ -119,7 +119,7 @@ switch(keyNow){
   case (key_Left):
   groundhogMovingLeft=1;
   groundhogMove+=1;
-  groundSpeed=-80/15;
+  groundSpeed=-80/16;
   groundHogX+=groundSpeed;
   groundHog = loadImage("img/groundhogLeft.png");
         if(groundhogMove==16){
@@ -135,7 +135,7 @@ switch(keyNow){
   case (key_Down):
   groundhogMovingDown=1;
   groundhogMove+=1;
-  groundSpeed=80/15;
+  groundSpeed=80/16;
   groundHogY+=groundSpeed;
   groundHog = loadImage("img/groundhogDown.png");
         if(groundhogMove==16){
